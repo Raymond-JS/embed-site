@@ -27,7 +27,7 @@
       <div class="header__menu" data-header-menu="$">
       <ul>
         <li>
-          <a href="https://embeddigital.co/#" data-scroll="feedback">Request a Quote</a>
+          <a href="#embedQuery" data-scroll="feedback">Request a Quote</a>
         </li>
       </ul>
     </div>
@@ -54,7 +54,7 @@
         <span class="block-xs">We work with a small number of clients to reach </span> their <br> target audience on YouTube and grow their channel.
       </p>
 
-      <a href="https://embeddigital.co/#" class="btn btn--gradient" data-scroll="feedback">Get a Quote</a>
+      <a href="#embedQuery" class="btn btn--gradient" data-scroll="feedback">Get a Quote</a>
     </div>
   </div>
 
@@ -134,6 +134,15 @@
   <script src="./static/common.js"></script>
 
   <script>
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth"
+        })
+      })
+    })
 
     const handleSubmit = (e) => {
   e.preventDefault();
