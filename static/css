@@ -280,7 +280,21 @@
 }
 
 
-.footer__info {
+.footer__info  {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
