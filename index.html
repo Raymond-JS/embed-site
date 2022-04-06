@@ -21,13 +21,13 @@
       <div id="page__content" class="page__content" data-page-content="$">
         
 <header class="header " data-header-component="{&quot;activeClass&quot;: &quot;active&quot;, &quot;openClass&quot;: &quot;open&quot;, &quot;authComponent&quot;: &quot;#modal-auth&quot;}">
-  <a href="https://embeddigital.com/" class="header__logo">
+  <a href="https://embeddigital.co/" class="header__logo">
     <span>Embed Digital</span>
   </a>
       <div class="header__menu" data-header-menu="$">
       <ul>
         <li>
-          <a href="https://embeddigital.com/#" data-header-item="$" data-scroll="feedback">Request a Quote</a>
+          <a href="https://embeddigital.co/#" data-header-item="$" data-scroll="feedback">Request a Quote</a>
         </li>
       </ul>
     </div>
@@ -66,7 +66,9 @@
   <div class="container">
     <h2>Request a quote</h2>
     <h4>We will get back to you as soon as possible</h4>
-    <form name="contact" method="POST" data-netlify="true">
+
+
+    <form name="contact" method="POST" data-netlify="true" id="embedQuery">
       <div class="feedback__beside">
         <div class="form__row">
           <input type="text" name="name" placeholder="Your name">
@@ -130,6 +132,29 @@
   <span data-screen="desktop" class="visible-desktop"></span>
     
   <script src="./static/common.js"></script>
+
+  <script>
+
+    const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("embedQuery");
+  let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted" = formData ))
+    .catch((error) => alert(error));
+};
+
+    document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
+
+
+  </script>
   
   <!-- <script src="./static/index.js"></script> -->
 
