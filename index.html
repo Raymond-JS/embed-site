@@ -1,175 +1,121 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="Em7JFn5jW2SFxT6JYMMujYWXywObDE4tFUiFYBaSrs0">
-  <meta name="description" content="A written YouTube channel audit for creators tired of waiting for the algorithm to notice them. $397, delivered in 5 business days.">
-  <meta name="keywords" content="youtube channel audit, youtube growth, youtube ads, google ads for creators, channel optimization">
-  <meta property="og:title" content="Embed Digital — Your Favorite YouTuber's Secret Weapon">
-  <meta property="og:description" content="A written YouTube channel audit for creators tired of waiting for the algorithm to notice them. $397, delivered in 5 business days.">
-  <link href="./static/css" rel="stylesheet">
+  <meta name="description" content="Embed Digital — coming soon.">
+  <meta property="og:title" content="Embed Digital — Coming Soon">
+  <meta property="og:description" content="Something new is on the way.">
+  <title>Embed Digital — Coming Soon</title>
 
-    
-  <link rel="stylesheet" href="./static/styles.css">
-  <title>Embed Digital — YouTube Channel Audits for Creators</title>
-  <link rel="stylesheet" href="static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: 'Permanent Marker', cursive;
+      color: #1a1a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      /* paper-like off-white background with subtle grain */
+      background-color: #f6f1e4;
+      background-image:
+        radial-gradient(circle at 22% 28%, rgba(0,0,0,0.025) 1px, transparent 1.5px),
+        radial-gradient(circle at 78% 72%, rgba(0,0,0,0.025) 1px, transparent 1.5px),
+        radial-gradient(circle at 50% 50%, rgba(255,255,255,0.4), transparent 70%),
+        linear-gradient(180deg, #faf6ec 0%, #ede5cf 100%);
+      background-size: 60px 60px, 40px 40px, 100% 100%, 100% 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* container holds the brand + stamp pair so we can position them as a unit */
+    .stage {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      padding: 0 1rem;
+    }
+
+    .brand {
+      font-family: 'Permanent Marker', cursive;
+      font-size: clamp(3rem, 13vw, 9rem);
+      color: #161616;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      transform: rotate(-2.5deg);
+      display: inline-block;
+      /* marker bleed effect */
+      text-shadow:
+        0 0 1px rgba(0,0,0,0.4),
+        1px 0 0 rgba(20,20,20,0.25),
+        0 1px 0 rgba(20,20,20,0.25);
+      white-space: nowrap;
+    }
+
+    /* the "Coming Soon" stamp — overlaps the brand at lower right */
+    .stamp {
+      position: absolute;
+      right: -2.5rem;
+      bottom: -2rem;
+      font-family: 'Stardos Stencil', monospace;
+      font-weight: 700;
+      color: #b81530;
+      font-size: clamp(1.1rem, 3vw, 2rem);
+      letter-spacing: 0.18em;
+      padding: 0.5rem 1.25rem;
+      border: 3.5px solid #b81530;
+      transform: rotate(8deg);
+      background: transparent;
+      opacity: 0.88;
+      /* slightly uneven ink */
+      text-shadow: 0.5px 0 0 rgba(184,21,48,0.4);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.35);
+      white-space: nowrap;
+    }
+
+    .contact {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) rotate(-1deg);
+      font-family: 'Permanent Marker', cursive;
+      font-size: 0.95rem;
+      color: #555;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .contact:hover { color: #161616; }
+
+    /* tweak stamp positioning on narrow screens so it doesn't fall off-screen */
+    @media (max-width: 600px) {
+      .stamp {
+        right: -0.5rem;
+        bottom: -1.5rem;
+        font-size: 1rem;
+        padding: 0.4rem 0.9rem;
+        letter-spacing: 0.14em;
+      }
+      .brand {
+        font-size: clamp(2.5rem, 14vw, 5rem);
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="page__app">
-    <div class="page__wrapper">
-      <div id="page__content" class="page__content" data-page-content="$">
-        
-<header class="header " data-header-component="{&quot;activeClass&quot;: &quot;active&quot;, &quot;openClass&quot;: &quot;open&quot;, &quot;authComponent&quot;: &quot;#modal-auth&quot;}">
-  <a href="https://embeddigital.co/" class="header__logo">
-    <span>Embed Digital</span>
-  </a>
-      <div class="header__menu" data-header-menu="$">
-      <ul>
-        <li>
-          <a href="#embedQuery" data-scroll="feedback">Book Your Audit</a>
-        </li>
-      </ul>
-    </div>
-  </header>          <div id="top" class="top">
-    <div class="container">
-      <div class="top__header">
-        <span class="block-mb">Embed</span>
-        di
-        <img src="./static/play.svg" alt="play">
-        ital
-      </div>
-      <h1>
-        <span class="block-mb block-xs">Your Favorite YouTuber's</span>
-        Secret Weapon
-      </h1>
-
-      <p class="visible-xs visible-sm visible-md">
-        <span class="block-xs">A written YouTube channel audit</span>
-        <span class="block-xs">built for creators tired of waiting</span>
-        <span class="block-xs">for the algorithm to notice them.</span>
-      </p>
-
-      <p>
-        Your videos are good. The views don't match the work, growth has plateaued, or you can feel something's off and you can't name it. The problem usually isn't your content — it's the small signals around it that quietly tell YouTube who <em>not</em> to show your videos to.
-      </p>
-
-      <a href="#embedQuery" class="btn btn--gradient" data-scroll="feedback">Book Your Audit</a>
-    </div>
+  <div class="stage">
+    <span class="brand">Embed Digital</span>
+    <span class="stamp">Coming Soon</span>
   </div>
 
-  
-
-  
-
-  <section class="section">
-    <div class="container">
-      <h2>The Embed Digital Channel Audit</h2>
-      <h4>A written, fixed-scope deliverable built on 7 years inside YouTube. No retainers. No surprises.</h4>
-
-      <p><strong>What you get in 5 business days:</strong></p>
-      <ul>
-        <li>A detailed written audit of your channel — packaging, titles, thumbnails, hook structure, niche clarity, and upload cadence.</li>
-        <li>The top 5 changes to make first, in priority order, with examples drawn from your own videos.</li>
-        <li>A short list of the 2–3 videos on your channel best suited for paid promotion, and why.</li>
-        <li>One 30-minute follow-up call to walk through the document and answer questions while you're implementing.</li>
-      </ul>
-
-      <p><strong>$397, flat. Delivered in 5 business days.</strong></p>
-
-      <a href="#embedQuery" class="btn btn--gradient" data-scroll="feedback">Book Your Audit</a>
-    </div>
-  </section>
-
-  <section class="section feedback" id="feedback" data-component="feedback">
-  <div class="container">
-    <h2>Book Your Audit</h2>
-    <h4>$397 — delivered in 5 business days. Drop your details and we'll send the next step.</h4>
-
-
-    <form name="contact" method="POST" data-netlify="true" id="embedQuery">
-      <div class="feedback__beside">
-        <div class="form__row">
-          <input type="text" name="name" placeholder="Your name" required>
-          <div class="form__error"></div>
-        </div>
-        <div class="form__row">
-          <input type="text" name="contacts" placeholder="Email" required>
-          <div class="form__error"></div>
-        </div>
-      </div>
-      <div class="form__row">
-        <input type="text" name="text" placeholder="Your YouTube channel URL" required>
-        <div class="form__error"></div>
-      </div>
-
-      <button type="submit" class="btn--blue">Send</button>
-    </form>
-  </div>
-</section>        <footer id="footer" class="footer">
-  
-  <div class="footer__gray">
-    <div class="footer__bottom">
-      <div class="footer__info">
-        
-        <ul>
-          <li class="footer__info-item footer__mail">
-            <i class="icon icon-footer_mail"></i>
-            <a href="mailto:contact@embeddigital.com">contact@embeddigital.co</a>
-          </li>
-        </ul>
-      </div>
-       
-      <div class="footer__copy">©2026 Embed Digital LLC<br>Run by Google Ads certified strategists. Built for creators.</div>
-      
-    </div>
-  </div>
-</footer>      </div>
-    </div>
-  </div>
-
-  <div class="alert alert--success" data-component="alert">
-    <div class="alert__close" data-alert-close=""></div>
-    <div class="alert__text" data-alert-text=""></div>
-  </div>
-
-
-  <span data-screen="mobile" class="visible-mobile"></span>
-  <span data-screen="desktop" class="visible-desktop"></span>
-    
-  <script src="./static/common.js"></script>
-
-  <script>
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth"
-        })
-      })
-    })
-
-    const handleSubmit = (e) => {
-  e.preventDefault();
-  let myForm = document.getElementById("embedQuery");
-  let formData = new FormData(myForm);
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => console.log("Form successfully submitted" = formData ))
-    .catch((error) => alert(error));
-};
-
-    document
-  .querySelector("form")
-  .addEventListener("submit", handleSubmit);
-
-  </script>
-  
-  <!-- <script src="./static/index.js"></script> -->
-
-
-</body></html>
+  <a class="contact" href="mailto:contact@embeddigital.co">contact@embeddigital.co</a>
+</body>
+</html>
